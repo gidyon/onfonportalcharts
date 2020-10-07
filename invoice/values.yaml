@@ -40,7 +40,7 @@ securityContext: {}
   
 startupProbe:
   httpGet:
-    path: /api/invoices/health/live
+    path: /api/invoices/health/ready
     scheme: HTTP
     port: 80
   periodSeconds: 10
@@ -48,7 +48,7 @@ startupProbe:
 
 livenessProbe:
   httpGet:
-    path: /api/invoices/health/ready
+    path: /api/invoices/health/live
     scheme: HTTP
     port: 80
   initialDelaySeconds: 5

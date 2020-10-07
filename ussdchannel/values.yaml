@@ -40,7 +40,7 @@ securityContext: {}
   
 startupProbe:
   httpGet:
-    path: /api/ussdchannels/health/live
+    path: /api/ussdchannels/health/ready
     scheme: HTTP
     port: 80
   periodSeconds: 10
@@ -48,7 +48,7 @@ startupProbe:
 
 livenessProbe:
   httpGet:
-    path: /api/ussdchannels/health/ready
+    path: /api/ussdchannels/health/live
     scheme: HTTP
     port: 80
   initialDelaySeconds: 5
