@@ -1,0 +1,11 @@
+apiVersion: v2
+name: invoice
+description: API for creating, retrieving and sending invoices
+type: application
+version: 0.1.0
+appVersion: v1
+
+dependencies:
+- name: micro
+  version: 0.1.0
+  repository: "https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages"

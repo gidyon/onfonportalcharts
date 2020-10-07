@@ -1,0 +1,79 @@
+apiVersion: v1
+entries:
+  invoice:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2020-10-07T05:06:42.856525+03:00"
+    dependencies:
+    - name: micro
+      repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
+      version: 0.1.0
+    description: API for creating, retrieving and sending invoices
+    digest: db3968b2a0df96ecc76b172f0a2157f1ea6ee34765f8bb31f2b81b729772a6c4
+    name: invoice
+    type: application
+    urls:
+    - invoice-0.1.0.tgz
+    version: 0.1.0
+  payment:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2020-10-07T05:06:42.857752+03:00"
+    dependencies:
+    - name: micro
+      repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
+      version: 0.1.0
+    description: Payment API for receiving, retrieving and filtering through payments
+      made for products and services
+    digest: c75fec34745d48ebc499fe1df5d976a5c0a1f4b7700d0a60cb319d7b61b34400
+    name: payment
+    type: application
+    urls:
+    - payment-0.1.0.tgz
+    version: 0.1.0
+  ussdbilling:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2020-10-07T05:06:42.859049+03:00"
+    dependencies:
+    - name: micro
+      repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
+      version: 0.1.0
+    description: USSD Billing API
+    digest: 795f7c6c86e81fb7465ecfca3966c4c3c1b7dd3fa2e396388500c64df2cff603
+    name: ussdbilling
+    type: application
+    urls:
+    - ussdbilling-0.1.0.tgz
+    version: 0.1.0
+  ussdchannel:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2020-10-07T05:06:42.860202+03:00"
+    dependencies:
+    - name: micro
+      repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
+      version: 0.1.0
+    description: API for managing USSD short codes
+    digest: 75b0c3e9d597bafdccba31e0dd0720a1475c096264251d18556c804043bc0f49
+    name: ussdchannel
+    type: application
+    urls:
+    - ussdchannel-0.1.0.tgz
+    version: 0.1.0
+  ussdlog:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2020-10-07T05:06:42.863717+03:00"
+    dependencies:
+    - name: micro
+      repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
+      version: 0.1.0
+    description: USSD Logging API
+    digest: d03c37fcd58882bb27a785a61ee9a176669fca6539dc07b1b1c54ed51d932736
+    name: ussdlog
+    type: application
+    urls:
+    - ussdlog-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-10-07T05:06:42.855113+03:00"
