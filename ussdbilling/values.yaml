@@ -1,5 +1,5 @@
 image: 
-  repository: nofno/ussdlog
+  repository: nofno/ussdbilling
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -40,7 +40,7 @@ securityContext: {}
   
 startupProbe:
   httpGet:
-    path: /api/ussdbillings/health/live
+    path: /api/ussdbillings/health/ready
     scheme: HTTP
     port: 80
   periodSeconds: 10
@@ -48,7 +48,7 @@ startupProbe:
 
 livenessProbe:
   httpGet:
-    path: /api/ussdbillings/health/ready
+    path: /api/ussdbillings/health/live
     scheme: HTTP
     port: 80
   initialDelaySeconds: 5
