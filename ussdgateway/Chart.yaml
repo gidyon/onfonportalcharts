@@ -1,6 +1,6 @@
 apiVersion: v2
-name: ussdbilling
-description: USSD Billing API
+name: ussdgateway
+description: USSD Gateway
 type: application
 version: 0.1.0
 appVersion: v1

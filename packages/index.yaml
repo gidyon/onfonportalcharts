@@ -3,13 +3,13 @@ entries:
   invoice:
   - apiVersion: v2
     appVersion: v1
-    created: "2020-10-07T10:25:41.924063+03:00"
+    created: "2020-10-12T11:48:59.313243+03:00"
     dependencies:
     - name: micro
       repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
-      version: 0.1.0
+      version: 0.1.1
     description: API for creating, retrieving and sending invoices
-    digest: 36cef6b68f78dd558d16164b3e71812a4e2a278e3e42dc162e5a082873ca87e3
+    digest: ea119f4b7620bb4576a0aec2756d015693ab3b5ff7f6f46b94361a30a2d6c604
     name: invoice
     type: application
     urls:
@@ -18,13 +18,13 @@ entries:
   mpesapayment:
   - apiVersion: v2
     appVersion: v1
-    created: "2020-10-07T10:25:41.928836+03:00"
+    created: "2020-10-12T11:48:59.317053+03:00"
     dependencies:
     - name: micro
       repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
-      version: 0.1.0
+      version: 0.1.1
     description: API for receiving and saving Lipa Na Mpesa payments + STK Push
-    digest: dd7bc1b82101cf0cf039848a5996805853465142b4cd2497696d10f05a974e9d
+    digest: 9a144318f8a7d37d97a0d7456d27881c5e2945f57de7b3f4c15ba780869fbc5a
     name: mpesapayment
     type: application
     urls:
@@ -33,14 +33,14 @@ entries:
   payment:
   - apiVersion: v2
     appVersion: v1
-    created: "2020-10-07T10:25:41.931049+03:00"
+    created: "2020-10-12T11:48:59.322292+03:00"
     dependencies:
     - name: micro
       repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
-      version: 0.1.0
+      version: 0.1.1
     description: Payment API for receiving, retrieving and filtering through payments
       made for products and services
-    digest: 5f1bc4be55757a63526996724a54b63064fa200b37f30a096860a62b3ba5a74e
+    digest: 862e213da61e2b5ac2694b21d9e7e021b788b6618ce0d71da15ff580a1b1a706
     name: payment
     type: application
     urls:
@@ -49,13 +49,13 @@ entries:
   ussdbilling:
   - apiVersion: v2
     appVersion: v1
-    created: "2020-10-07T10:25:41.932978+03:00"
+    created: "2020-10-12T11:48:59.324224+03:00"
     dependencies:
     - name: micro
       repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
-      version: 0.1.0
+      version: 0.1.1
     description: USSD Billing API
-    digest: c1a3b5d51cc5f6d8aa5a11c892864de345dcc39a3d764fba1e66ed354c7b996c
+    digest: 2dec61288a3b6125c5677add6ca182134afb2f6e3acdf68148cb33a7ca807a9c
     name: ussdbilling
     type: application
     urls:
@@ -64,31 +64,46 @@ entries:
   ussdchannel:
   - apiVersion: v2
     appVersion: v1
-    created: "2020-10-07T10:25:41.934687+03:00"
+    created: "2020-10-12T11:48:59.328833+03:00"
     dependencies:
     - name: micro
       repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
-      version: 0.1.0
+      version: 0.1.1
     description: API for managing USSD short codes
-    digest: 75f850bbdedcfac7483ba638f047de72a2c4de4bd6311d094b1d0630061c32d2
+    digest: fac94d316317b9cf947d891756a93361c269ba6045286d9b530715a1946594a7
     name: ussdchannel
     type: application
     urls:
     - ussdchannel-0.1.0.tgz
     version: 0.1.0
-  ussdlog:
+  ussdgateway:
   - apiVersion: v2
     appVersion: v1
-    created: "2020-10-07T10:25:41.936267+03:00"
+    created: "2020-10-12T11:48:59.33027+03:00"
     dependencies:
     - name: micro
       repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
-      version: 0.1.0
+      version: 0.1.1
+    description: USSD Gateway
+    digest: b4f409b72941676f12de05f251cb5353d70b9e54e80478a8f71dd8d0a73f7cd9
+    name: ussdgateway
+    type: application
+    urls:
+    - ussdgateway-0.1.0.tgz
+    version: 0.1.0
+  ussdlog:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2020-10-12T11:48:59.333106+03:00"
+    dependencies:
+    - name: micro
+      repository: https://raw.githubusercontent.com/gidyon/services/master/deployments/helm/packages
+      version: 0.1.1
     description: USSD Logging API
-    digest: e301d3db840aa49388d132877f6d97275a6d1e38671390d747cfe5b1f29a3f70
+    digest: 819cf8e57e1d73bc5e3e2d45df9c3d5ad3c356d116c9dd6f9f7b4e187bac988b
     name: ussdlog
     type: application
     urls:
     - ussdlog-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-07T10:25:41.920296+03:00"
+generated: "2020-10-12T11:48:59.309472+03:00"
