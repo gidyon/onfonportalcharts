@@ -142,7 +142,7 @@ config:
         name: redisWrites
     - required: true
       type: redisDatabase
-      address: redis-slave:6379
+      address: redis-headless:6379
       passwordFile: /app/secrets/redis/redis-root-password
       metadata:
         name: redisReads
