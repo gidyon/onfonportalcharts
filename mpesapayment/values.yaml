@@ -128,7 +128,7 @@ extraEnv:
 
 # extraVolume contains additional volumes supplied by user
 extraVolume:
-  - name: mysql-creds
+  - name: mysql-credentials
     mountPath: /app/secrets/mysql/
     readOnly: true
   - name: redis-credentials
@@ -137,9 +137,9 @@ extraVolume:
 
 # extraVolumeMount specifies volume mounts for extraVolume
 extraVolumeMount:
-  - name: mysql-creds # keys: mysql-root-password,mysql-replication-password,mysql-password,mysql-default-user,mysql-default-schema,mysql-replication-user
+  - name: mysql-credentials # keys: mysql-root-password,mysql-replication-password,mysql-password,mysql-default-user,mysql-default-schema,mysql-replication-user
     secret:
-      secretName: mysql-creds
+      secretName: mysql-credentials
   - name: redis-credentials # keys: redis-root-password,redis-database
     secret:
       secretName: redis-credentials
